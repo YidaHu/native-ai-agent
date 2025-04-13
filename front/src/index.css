@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  padding: 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.ant-card-body {
+  height: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 欢迎页面样式 */
+.welcome-placeholder {
+  padding-top: 32px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.welcome-placeholder .ant-welcome {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+/* 响应式布局调整 */
+@media (max-width: 768px) {
+  .chat-layout {
+    flex-direction: column !important;
+  }
+  
+  .conversations-sidebar {
+    width: 100% !important;
+    margin-bottom: 12px;
+    max-height: 200px !important;
+  }
+  
+  .thought-chain-sidebar {
+    width: 100% !important;
+    margin-top: 12px;
+    max-height: 200px !important;
+  }
+  
+  .vertical-divider {
+    display: none !important;
+  }
+
+  #container {
+    padding: 12px;
+  }
+  
+  .welcome-placeholder {
+    padding-top: 16px;
+  }
+}

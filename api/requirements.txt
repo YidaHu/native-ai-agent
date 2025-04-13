@@ -1,0 +1,24 @@
+# 主要依赖
+pydantic>=2.7.0
+pydantic-settings>=2.8.1
+fastapi>=0.110.0
+uvicorn[standard]>=0.21.1
+redis[hiredis]>=4.5.1
+python-dotenv>=1.0.0
+httpx>=0.25.2
+sqlalchemy>=2.0.20
+alembic>=1.12.0
+structlog>=23.1.0
+langgraph>=0.3.14
+langchain>=0.3.20
+langchain-openai>=0.3.9
+
+# 开发依赖
+pytest>=7.3.1
+pytest-asyncio>=0.21.0
+black>=23.3.0
+isort>=5.12.0
+flake8>=6.0.0
+pytest-cov>=4.1.0
+mypy>=1.5.1
+fastapi-mcp
